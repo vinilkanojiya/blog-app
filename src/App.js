@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2024-06-22&sortBy=publishedAt&apiKey=4934e6561c69483487e8e57f0a0c17a0`);
+        const response = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2024-06-23&sortBy=publishedAt&apiKey=4934e6561c69483487e8e57f0a0c17a0`);
         const data = await response.json();
         setPosts(data.articles);
       } catch (error) {
